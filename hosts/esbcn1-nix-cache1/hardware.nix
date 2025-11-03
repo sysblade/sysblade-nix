@@ -30,6 +30,11 @@
     device = "/dev/disk/by-uuid/084b2744-99f7-4a45-bee3-5158bba63585";
     fsType = "ext4";
   };
+  
+  fileSystems."/var/cache/nginx" = {
+    device = "/dev/disk/by-uuid/5f7c39ec-b8d2-4b42-b43b-107f26be55bb";
+    fsType = "ext4";
+  };
 
   fileSystems."/boot" = {
     device = "/dev/disk/by-uuid/DC28-FB2F";
