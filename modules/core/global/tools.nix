@@ -17,6 +17,7 @@
     gnutar
     jq
     neofetch
+    parted
     ripgrep
     time
     tokei
