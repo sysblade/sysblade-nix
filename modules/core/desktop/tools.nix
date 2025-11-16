@@ -6,6 +6,7 @@
     aspellDicts.en
     aspellDicts.es
     aspellDicts.fr
+    cabextract
     calibre
     ffmpeg-full
     gimp3-with-plugins
