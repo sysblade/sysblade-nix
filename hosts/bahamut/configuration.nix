@@ -52,14 +52,12 @@
     };
   };
 
-  users.users.kedare = {
-    packages = [
-      # tricks override to fix audio
-      # see https://github.com/fufexan/nix-gaming/issues/165#issuecomment-2002038453
-      (inputs.nix-gaming.packages.${pkgs.hostPlatform.system}.star-citizen.override {
-        tricks = [ "arial" "vcrun2019" "win10" "sound=alsa" ];
-        location = "/mnt/data/nixgaming/star-citizen";
-      })
-    ];
+  nix.settings = {
+    substituters = [ "https://nix-citizen.cachix.org" ];
+    trusted-public-keys = [ "nix-citizen.cachix.org-1:lPMkWc2X8XD4/7YPEEwXKKBg+SVbYTVrAaLA2wQTKCo=" ];
   };
+
+  environment.systemPackages = with pkgs; [
+    inputs.nix-citizen.packages.${system}.star-citizen
+  ];
 }
