@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
@@ -50,5 +50,16 @@
     serviceConfig = {
       Environment = "SYSTEMD_SLEEP_FREEZE_USER_SESSIONS=false";
     };
+  };
+
+  users.users.kedare = {
+    packages = [
+      # tricks override to fix audio
+      # see https://github.com/fufexan/nix-gaming/issues/165#issuecomment-2002038453
+      (inputs.nix-gaming.packages.${pkgs.hostPlatform.system}.star-citizen.override {
+        tricks = [ "arial" "vcrun2019" "win10" "sound=alsa" ];
+        location = "/mnt/data/nixgaming/star-citizen";
+      })
+    ];
   };
 }

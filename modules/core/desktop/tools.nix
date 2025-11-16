@@ -20,6 +20,8 @@
     vscode
     wezterm
     winbox4
+    winetricks
+    wineWowPackages.stable
     wireshark
     yt-dlp
   ];

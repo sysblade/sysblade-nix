@@ -14,7 +14,7 @@
       nixpkgs,
       nixos-hardware,
       ...
-    }:
+    }@inputs:
     {
       nixosConfigurations = {
         esbcn1-nix-cache1 = nixpkgs.lib.nixosSystem {
@@ -43,6 +43,7 @@
           ];
         };
         bahamut = nixpkgs.lib.nixosSystem {
+          specialArgs = {inherit inputs;};
           system = "x86_64-linux";
           modules = [
             ./hosts/bahamut/configuration.nix
