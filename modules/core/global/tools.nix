@@ -19,13 +19,11 @@
     neofetch
     parted
     ripgrep
-    sipcalc
     time
     tokei
     tree
     which
     yq-go
-    whois
 
     # Nix related tools
     direnv
@@ -33,15 +31,19 @@
     nixd
     nixfmt-rfc-style
 
-    # HTTP clients
+    # Network utilities
     curl
+    dnsutils
     httpie
+    inetutils
+    sipcalc
+    tcpdump
     wget
+    whois
 
     # Monitoring
     acpi
     btop
-    dnsutils
     htop
     iftop
     iotop
@@ -52,8 +54,6 @@
     pciutils
     strace
     sysstat
-    sysstat
-    tcpdump
     usbutils
 
     # Backup and storage management
