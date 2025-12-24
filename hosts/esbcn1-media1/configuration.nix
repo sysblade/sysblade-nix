@@ -10,4 +10,19 @@
   boot.loader.efi.canTouchEfiVariables = true;
   networking.hostName = "esbcn1-media1";
   time.timeZone = "Europe/Madrid";
+
+  services.jellyfin = {
+    enable = true;
+    openFirewall = true;
+  };
+  environment.systemPackages = [
+    pkgs.jellyfin
+    pkgs.jellyfin-web
+    pkgs.jellyfin-ffmpeg
+  ];
+
+  services.plex = {
+    enable = true;
+    openFirewall = true;
+  };
 }
