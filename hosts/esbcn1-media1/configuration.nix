@@ -33,7 +33,8 @@
   
   services.qbittorrent = {
     enable = true;
-    port = 8080;
+    torrentingPort = 51413;
+    webuiPort = 8080;
     user = "media";
     group = "media";
   };
