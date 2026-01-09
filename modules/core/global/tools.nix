@@ -40,6 +40,7 @@
     tcpdump
     wget
     whois
+    wireguard-tools
 
     # Monitoring
     acpi
