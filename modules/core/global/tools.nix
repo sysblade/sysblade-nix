@@ -36,6 +36,7 @@
     dnsutils
     httpie
     inetutils
+    openssl
     sipcalc
     tcpdump
     wget
