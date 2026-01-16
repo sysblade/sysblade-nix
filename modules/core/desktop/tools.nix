@@ -17,6 +17,7 @@
     hunspellDicts.fr-moderne
     libreoffice
     nextcloud-client
+    qFlipper
     vlc
     vscode
     wezterm
@@ -25,6 +26,7 @@
     wineWowPackages.stable
     wireshark
     yt-dlp
+    xkill
   ];
 
   fonts = {
