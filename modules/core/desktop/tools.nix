@@ -15,6 +15,7 @@
     hunspellDicts.en-us-large
     hunspellDicts.es-es
     hunspellDicts.fr-moderne
+    inkscape
     libreoffice
     nextcloud-client
     qFlipper
