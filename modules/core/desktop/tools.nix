@@ -37,8 +37,11 @@
       nerd-fonts._0xproto
       nerd-fonts.droid-sans-mono
       nerd-fonts.fira-code
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
     ];
     fontconfig = {
+      enable = true;
       defaultFonts = {
         monospace = [ "0xProto Nerd Font" ];
         sansSerif = [ "Fira Sans" ];
