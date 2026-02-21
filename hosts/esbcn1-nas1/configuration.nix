@@ -79,6 +79,7 @@
     exports = ''
       /mnt/dpool/public 192.168.131.5(rw,no_subtree_check)
       /mnt/dpool/pve 192.168.131.201(rw,no_subtree_check) 192.168.131.202(rw,no_subtree_check) 192.168.131.203(rw,no_subtree_check)
+      /mnt/dpool/pbs 192.168.131.4(rw,no_subtree_check)
     '';
   };
   networking.firewall = {
