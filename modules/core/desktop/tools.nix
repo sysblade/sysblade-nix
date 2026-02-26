@@ -6,6 +6,8 @@
     aspellDicts.en
     aspellDicts.es
     aspellDicts.fr
+    bitwarden-desktop
+    bitwarden-cli
     cabextract
     calibre
     ffmpeg-full
