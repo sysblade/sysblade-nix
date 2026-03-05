@@ -55,7 +55,7 @@
   programs._1password.enable = true;
   programs._1password-gui = {
     enable = true;
-    polkitPolicyOwners = [ "kedare" ];
+    polkitPolicyOwners = [ "sysblade" ];
   };
   programs.firefox.enable = true;
   programs.thunderbird.enable = true;

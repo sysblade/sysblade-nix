@@ -39,7 +39,7 @@
   '';
 
   programs.virt-manager.enable = true;
-  users.groups.libvirtd.members = [ "kedare" ];
+  users.groups.libvirtd.members = [ "sysblade" ];
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
 
@@ -47,5 +47,5 @@
     enable = true;
   };
 
-  users.users.kedare.extraGroups = [ "docker" ];
+  users.users.sysblade.extraGroups = [ "docker" ];
 }

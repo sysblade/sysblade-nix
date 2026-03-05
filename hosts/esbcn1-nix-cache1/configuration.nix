@@ -18,7 +18,7 @@
 
   security.acme = {
     acceptTerms = true;
-    email = "acme@kedare.net";
+    email = "acme@sysblade.net";
   };
 
   services.nginx = {
@@ -39,12 +39,12 @@
         default "no-cache";
       }
 
-      log_format cache_log '$remote_addr - $remote_user [$time_local] "$request" $status $upstream_cache_status $body_bytes_sent  "$http_referer" "$http_user_agent"'; 
+      log_format cache_log '$remote_addr - $remote_user [$time_local] "$request" $status $upstream_cache_status $body_bytes_sent  "$http_referer" "$http_user_agent"';
 
       access_log /var/log/nginx/access.log cache_log;
     '';
 
-    virtualHosts."cache.nix.keda.re" = {
+    virtualHosts."cache.nix.sysbla.de" = {
       addSSL = true;
       enableACME = true;
       locations."/" = {

@@ -1,6 +1,6 @@
 let
   # User SSH keys (for managing secrets from workstation)
-  kedare = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICQn06uPFTEWD0XLFPI+z1x73PicyR0wg6i39z4TtlPU";
+  sysblade = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICQn06uPFTEWD0XLFPI+z1x73PicyR0wg6i39z4TtlPU";
 
   # System host keys
   garuda = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK+TzzoaQ3PPw+zG6e1KwPmGpohET2ojzmUN/c4xTm9h root@nixos";
