@@ -4,10 +4,12 @@
 
   environment.systemPackages = with pkgs; [
     act
-    arduino-ide
     arduino-cli
+    arduino-ide
     clang
     delve
+    deno
+    dotnetCorePackages.sdk_10_0-bin
     esptool
     gcc
     gnumake
