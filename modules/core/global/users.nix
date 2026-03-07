@@ -4,13 +4,13 @@
 }:
 
 {
-  users.groups.kedare = {
+  users.groups.sysblade = {
     gid = 1000;
   };
-  users.users.kedare = {
+  users.users.sysblade = {
     uid = 1000;
     isNormalUser = true;
-    group = "kedare";
+    group = "sysblade";
     extraGroups = [
       "wheel"
       "networkmanager"
@@ -21,7 +21,7 @@
     openssh.authorizedKeys.keys =
       let
         authorizedKeys = pkgs.fetchurl {
-          url = "https://codeberg.org/kedare.keys";
+          url = "https://codeberg.org/sysblade.keys";
           sha256 = "sha256-4Y8H2fgNFEJXGKdWjJq5O9AcFoUxjJnWIh6xdqMfo4s=";
         };
       in
