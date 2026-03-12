@@ -6,6 +6,7 @@
     act
     arduino-cli
     arduino-ide
+    bun
     clang
     delve
     deno
