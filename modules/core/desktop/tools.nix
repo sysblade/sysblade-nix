@@ -19,6 +19,7 @@
     hunspellDicts.fr-moderne
     inkscape
     libreoffice
+    lmstudio
     nextcloud-client
     qFlipper
     remmina
