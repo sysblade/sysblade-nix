@@ -29,6 +29,7 @@
     poetry
     postgresql
     postgresql.pg_config
+    asdf-vm
     python314
     qemu
     ruby_3_4
